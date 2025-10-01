@@ -8,6 +8,7 @@ public class App {
         //car bean sample
         ApplicationContext context
                 = new ClassPathXmlApplicationContext("applicationConstructorInjection.xml");
+                
         Car myCar = (Car) context.getBean("myCar");
         myCar.displayDetails();
     }
